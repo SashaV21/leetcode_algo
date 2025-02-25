@@ -23,7 +23,7 @@ In other words, answer whether or not if there exists a line that after reflecti
 **Реализация:**
 [Решение на Python](https://github.com/SashaV21/leetcode_algo/blob/main/Line%20Reflection.py)
 
-## Longest Subarray of 1's After Deleting One Element (Отражение линии)
+## Longest Subarray of 1's After Deleting One Element (Наибольшая подстрока из единиц после удаления одного элемента)
 
 **Сложность:** Medium
 **Подсказка:** Два указателя
@@ -43,6 +43,37 @@ Given a binary array nums, you should delete one element from it. Return the siz
 
 **Реализация:**
 [Решение на Python](https://github.com/SashaV21/leetcode_algo/blob/main/Longest%20Subarry%20of%201's%20After%20deleting%20one%20element.py)
+
+
+## Summary Ranges (Сводные диапазоны)
+
+**Сложность:** Easy
+
+**Условие задачи:** 
+
+You are given a sorted unique integer array nums.
+A range [a,b] is the set of all integers from a to b (inclusive).
+Return the smallest sorted list of ranges that cover all the numbers in the array exactly. That is, each element of nums is covered by exactly one of the ranges, and there is no integer x such that x is in one of the ranges but not in nums.
+Each range [a,b] in the list should be output as:
+"a->b" if a != b
+"a" if a == b
+
+Вам предоставляется отсортированный уникальный целочисленный массив nums.
+Диапазон [a,b] — это множество всех целых чисел от a до b (включительно).
+Возвращает наименьший отсортированный список диапазонов, которые точно охватывают все числа в массиве. То есть каждый элемент nums покрывается ровно одним из диапазонов, и не существует целого числа, x такого, x которое находится в одном из диапазонов, но не в nums.
+Каждый диапазон [a,b] в списке должен быть выведен в виде:
+"a->b" если a != b
+"a" если a == b
+**Описание алгоритма:**
+
+1.  Проходим правым указателям по значениям, если встретили `0`, то увеличиваем счетчик `zeroes`.
+2.  Пока количество нулей будет больше 1, мы сдвигаем левый указатель и если `nums[l] == 0`, то уменьшаем счетчик
+3.  Каждый раз обновляем `ans`. Длина нужной нам последовательности - `r - l + 1 - zeroes`
+4.  Возвращаем результат
+
+**Реализация:**
+[Решение на Python](https://github.com/SashaV21/leetcode_algo/blob/main/Longest%20Subarry%20of%201's%20After%20deleting%20one%20element.py)
+
 
 
 
