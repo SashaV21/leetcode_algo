@@ -23,5 +23,5 @@ In other words, answer whether or not if there exists a line that after reflecti
 
 **Реализация:**
 
-[Решение на Python]([https://github.com/your-username/my-repo/blob/main/solutions/solution.py](https://github.com/SashaV21/leetcode_algo/blob/main/Line%20Reflection.py))
+[Решение на Python](https://github.com/SashaV21/leetcode_algo/blob/main/Line%20Reflection.py)
 
